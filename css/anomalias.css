@@ -31,6 +31,12 @@ nav ul{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .total_2{
@@ -78,7 +84,7 @@ a{
     background: linear-gradient(180deg, #E1E1E1 0%, #FFFFFF 100%);
     box-shadow: 4px 4px 8px rgb(0 0 0 / 25%);
     border-radius: 30vw;
-
+    color: #CA0000;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
@@ -87,6 +93,17 @@ a{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .doctor{
+        width: 80vw;
+        height: auto;
+    }
+
+    .button_1{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -103,6 +120,7 @@ a{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .total_3{
@@ -188,7 +206,27 @@ a{
     justify-content: center;
 }
 
-@media only screen and (max-width: 1919px) {
+@media only screen and (max-width: 1200px) {
+    .left{
+        width: 75vw;
+        height: 64.5vw;
+        background-size: 75vw;
+    }
+
+    .h1_1{
+        font-size: 3.225vw;
+        line-height: 3.6vw;
+        width: 57.9vw;
+    }
+
+    .p_a{
+        font-size: 2.4vw;
+        line-height: 2.421vw;
+        width: 57.9vw;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1919px) {
     .left{
         background-size: 50vw;
     }
@@ -242,6 +280,7 @@ a{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .total_4{
@@ -296,6 +335,22 @@ a{
 
     color: #FFFFFF;
 }
+
+@media only screen and (max-width: 1200px) {
+    .total_4{
+        width: 80vw;
+    }
+
+    .p_2{
+        width: 90%;
+    }
+
+    .p_b{
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+}
+
 
 @media only screen and (min-width: 1920px) {
     .section_3 {
@@ -398,6 +453,30 @@ a{
     margin-top: 2vw;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1200px) {
+    .total_5{
+        justify-content: center;
+    }
+
+    .total_6{
+        width: 70vw;
+    }
+
+    .img_6{
+        height: 35vw;
+    }
+
+    .p_6{
+        font-size: 2.2vw;
+    }
+
+    .button_6{
+        width: 25.2vw;
+        height: 4.45vw;
+        font-size: 1.35vw;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
