@@ -1,2 +1,0 @@
-# projeto-integrador-hemacias
-HEMÁCIAS
