@@ -1,6 +1,7 @@
 html{
     height: 200vh;
     display: grid;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -12,11 +13,21 @@ body{
     height: 200vh;
 }
 
+.mobile{
+    display: none;
+}
+
+.mobile2{
+    display: none;
+}
+
 .section_1{
     background-image: url("bck1.png");
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
     width: 100vw;
     height: 100vh;
 }
@@ -159,9 +170,55 @@ h3{
 }
 
 
+@media only screen and (max-width: 1200px) {
+    h3, .h2_z, .int{
+        font-size: 2.25vw;
+    }
+
+    .mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo_img_1{
+        width: 50vw;
+    }
+
+    .nav_1{
+        display: none;
+    }
+
+    .mobile2{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile2 ul{
+        flex-direction: column;
+        margin-left: -5vw;
+        width: 100vw;
+    }
+
+    .mobile2 a{
+        font-size: 2.5vw;
+    }
+
+    .footer_1{
+        display: none;
+    }
+  }
+
 @media only screen and (min-width: 1920px) {
-    html {
+    .section_1 {
       background-size: 100vw;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .mobile2{
+        display: none;
     }
   }
 
@@ -174,6 +231,7 @@ h3{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     display: grid;
 }
@@ -275,7 +333,7 @@ main{
     color: white;
     flex-grow: 0;
     flex-basis: auto;
-    margin-bottom: 2vw;
+    display: flex;
 }
 
 
@@ -315,6 +373,12 @@ main{
 
 .instagram{
     width: 1.5vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    .h2_b{
+        font-size: 2vw;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
